@@ -1,0 +1,588 @@
+Butter, salted
+Butter, salted
+Butter, whipped
+blue cheese
+brick cheese
+brie cheese
+camembert cheese
+caraway cheese
+cheddar cheese
+cheshire cheese
+colby cheese
+cottage cheese
+cottage cheese, nonfat
+cottage cheese, lowfat
+cream cheese
+edam cheese
+feta cheese
+fontina cheese
+gjetost cheese
+gouda cheese
+gruyere cheese
+limburger cheese
+monterey cheese
+mozzarella cheese
+muenster cheese
+neufchatel cheese
+parmesan cheese, grated
+parmesan cheese, hard
+port de salut cheese
+provolone cheese
+ricotta cheese, whole milk
+ricotta cheese, part skim milk
+romano cheese
+roquefort cheese
+swiss cheese
+tilsit cheese
+parmesan cheese
+allspice, ground
+anise seed
+basil, dried
+bay leaf
+caraway seed
+cardamom
+celery seed
+chervil, dried
+chili powder
+cinnamon, ground
+cloves, ground
+coriander leaf, dried
+coriander seed
+cumin seed
+curry powder
+dill seed
+dill weed, dried
+fennel seed
+fenugreek seed
+garlic powder
+ginger, ground
+mace, ground
+marjoram, dried
+mustard seed, ground
+nutmeg, ground
+onion powder
+oregano, dried
+paprika
+parsley, dried
+pepper, black
+pepper, red or cayenne
+pepper, white
+poppy seed
+poultry seasoning
+pumpkin pie spice
+rosemary, dried
+saffron
+sage, ground
+savory, ground
+tarragon, dried
+thyme, dried
+turmeric, ground
+Basil
+Dill weed
+Mustard
+Salt
+Vinegar, cider
+Thyme
+alfalfa sprout, fresh
+allspice, ground
+beef, brisket
+beef, rib
+beef, tenderloin
+beef, sirloin
+beef, tripe
+naan
+bread crumbs
+brownies
+brussel sprouts
+bulgur
+burdock
+butter, salted
+butter, unsalted
+green cabbage
+savoy cabbage
+pak choi cabbage
+chinese cabbage
+red cabbage
+capers
+caramels
+cardamom
+carob
+carrots
+carrots, baby
+cassava
+cauliflower
+celery
+cranberries, fresh
+cranberries, dried
+cream, whipped, can
+cream, light
+cream, whipping
+cream, half and half
+cream of wheat
+creme fraiche
+croissants
+croutons
+cucumber
+currants
+curry powder
+cuttlefish
+dates
+dill weed
+dough, phyllo
+doughnuts
+duck fat
+duck, breast
+duck, legs
+duck, whole
+dumplings
+eel
+eggs
+egg, duck
+egg, quail
+egg substitute, liquid
+egg substitute, powder
+eggplant
+elderberries
+fennel seed
+fennel
+fenugreek
+figs
+anchovy
+bass
+butterfish
+catfish
+cod
+haddock
+halibut
+herring
+mackerel
+gum drops
+ham, chopped canned
+ham, cooked sliced
+ham, honey roasted, smoked
+ham, smoked, lean low salt
+ham, parma
+hamburger
+hash brown
+hearts of palm
+honey
+horseradish
+hotdog
+hummus
+ice cream, vanilla
+ice cream, chocolate
+ice cream, strawberry
+ice pop
+jackfruit
+jellybean
+tangerine juice
+passionfruit juice
+pineapple juice
+prune juice
+grapefruit juice, pink
+tomato juice
+carrot juice
+cranberry juice
+lemon juice
+lime juice
+grapefruit juice
+grape juice
+orange juice
+apple juice
+kale
+kiwi
+knockwurst
+lamb, leg
+lamb, loin
+lamb, ribs
+lamb, shoulder
+lamb, stewing
+lamb, brain
+almonds
+anise, seed
+beef, corned
+beef, pastrami
+beef, t-bone steak
+beef, chuck
+beef, jerky
+beef, ground
+beef, round bottom
+beef, flank, raw
+beef, top round
+beef, t bone steak
+beef, sirloin
+beef stew, canned
+beer
+beets
+bison
+blackberries
+blood sausage
+bloody mary mix
+boar
+bockwurst
+bratwurst
+corn bread
+egg bread
+french bread
+soda bread, irish
+italian bread
+mixed grain bread
+pita bread, whole wheat
+pumpernickel bread
+white bread, reduced cal
+rye bread
+wheat bread
+wheatgerm bread
+white bread
+whole wheat bread
+roll
+pita bread, white
+raisin bread
+garlic bread
+brown bread
+ciabatta bread
+chicken nuggets
+chicken breast
+chickpeas
+chili con carne
+chili, canned
+chilli powder
+chives
+chocolate, syrup
+chocolate, baking 
+chocolate bar, milk
+chocolate bar, plain
+chocolate bar, white
+chorizo
+cinnamon, ground
+clams
+cloves, ground
+club soda
+cocoa, butter
+cocoa, powder
+fish, pollock
+fish, sardines
+apple butter
+apricots, dried
+arrowroot
+artichokes
+bacon bits, meat free
+bagels
+baked beans
+baking soda
+bamboo shoots, raw
+bamboo shoots, canned
+banana, fresh
+banana, dried
+banana chips
+barley
+barley, pearled raw
+barley, flour
+basil, dried
+basil, fresh
+bay leaf
+navy beans
+snap beans
+adzuki beans
+black beans
+french beans
+kidney beans
+pinto beans
+white beans
+broad beans
+lima beans
+butter beans
+beef, brisket
+coffee
+coleslaw
+collards
+cilantro
+corn, grits
+corn Chex, cereal
+corn flakes, cereal
+corn on the cob
+cornnuts
+cornstarch
+couscous
+crab
+shark
+sturgeon
+swordfish
+trout
+rainbow trout
+tuna
+tuna, canned 
+crayfish
+white fish
+salmon
+carp
+fish fingers
+soybean oil
+peanut oil
+coconut oil
+olive oil
+sesame oil
+corn oil
+almond oil
+sunflower oil
+canola oil
+palm oil
+okra, raw
+rhubarb
+brown rice, raw
+wild rice, raw
+rice noodles
+white rice
+rice cakes
+Rice Krispies
+root beer
+rosemary
+saffron
+tortilla chips
+Twix
+vanilla extract
+veal
+tofu
+Alfalfa Sprouts 
+Apple
+Apricot 
+Artichoke 
+Asian Pear 
+Asparagus 
+Atemoya 
+Avocado
+Bamboo Shoots 
+Banana
+Beans
+Bean Sprouts 
+Beets
+Belgian Endive 
+Bitter Melon
+Bell Peppers 
+Blackberries 
+Blueberries
+Bok Choy 
+Boniato 
+Boysenberries 
+Broccoflower 
+Broccoli 
+Brussels Sprouts
+Cabbage  
+Cantaloupe
+Star fruit
+Carrots
+Casaba Melon
+Cauliflower
+Celery
+Chayote
+Cherimoya (Custard Apple) 
+Cherries
+Coconut
+Collard Greens 
+Corn 
+Cranberries 
+Cucumber
+Dates
+Dried Plums (Prunes)
+Eggplant 
+Endive 
+Escarole
+Feijoa
+Fennel
+Figs
+Garlic
+Gooseberries
+Grapefruit
+Grapes
+Green Beans
+Green Onions
+Turnip Greens
+Beet Greens 
+Collard Greens
+Mustard Greens 
+Guava
+Hominy 
+Honeydew Melon 
+Horned Melon
+Lettuce
+Jerusalem Artichoke 
+Jicama
+Kale 
+Kiwifruit 
+Kohlrabi 
+Kumquat
+Leeks
+Lemons
+Lima Beans
+Limes
+Longan
+Loquat
+Lychee
+Madarins
+Malanga 
+Mandarin Oranges 
+Mangos 
+Mulberries 
+Mushrooms
+Napa Cabbage 
+Nectarines
+Okra
+Onion
+Oranges
+Papayas 
+Parsnip 
+Passion Fruit 
+Peaches 
+Pears
+Peas
+Bell Peppers 
+Persimmons
+Pineapple
+Plantains
+Plums
+Pomegranate
+Potatoes
+Prickly Pear
+Prunes
+Pummelo
+Pumpkin
+Quince
+Radicchio 
+Radishes 
+Raisins 
+Raspberries
+Red Cabbage 
+Rhubarb 
+Rutabaga
+Shallots
+Snow Peas
+Spinach
+Sprouts
+Squash
+Strawberries
+String Beans
+Sweet Potato
+Tangelo 
+Tangerines 
+Tomatillo 
+Tomato 
+Turnip
+Ugli Fruit
+Watermelon 
+Water Chestnuts 
+Watercress 
+Waxed Beans
+Yams
+Yellow Squash 
+Yuca/Cassava
+Zucchini Squash
+Vegetables
+Broccoli
+Carrots
+Cauliflower
+Chilis
+Cilantro
+Corn
+Cucumber
+Garlic
+Ginger
+Greens
+Lettuce
+Mushrooms
+Onions
+Parsley
+Peppers
+Potatoes
+Spinach
+Squash
+Tomatoes
+Zucchini
+Butter
+Cheese
+Cottage Cheese
+Cream Cheese
+Creamer
+Eggs
+Margarine
+Milk
+Parmesan cheese
+Sour Cream
+Yogurt
+Basmati Rice
+Black beans
+Brown rice
+Bulgar wheat
+Chickpeas
+Couscous
+Kidney beans
+Lentils
+Oatmeal
+Pasta
+Quinoa
+Raisins
+Raw nuts
+Raw seeds
+Baking powder
+Baking soda
+Balsamic vinegar
+Bread flour
+Honey
+Maple syrup
+Mustard
+Olive Oil
+Peanut butter
+Yeast
+Beer
+Coffee
+Cola
+Tea
+Water
+Wine
+Baggies
+Dish soap
+Dryer sheets
+Foil
+Garbage bags
+Laundry detergent
+Plastic wrap
+Cat food
+Dog food
+Baby food
+Formula
+Ground Beef
+Beef Roast
+Beef Steaks
+Beef Ribs
+Chicken Breast with bone
+Chicken Breast boneless
+Chicken Legs
+Chicken Thighs
+Chicken Wings
+Chicken Whole
+Brown Sugar
+Catsup
+Cinnamon
+Garlic Powder
+Garlic Salt
+Ginger
+Honey
+Horseradish
+Jelly
+Mayonnaise
+Mustard (Brown)
+Mustard (yellow)
+Nutmeg
+Olive Oil
+Oregano
+Paprika
+Parsley
+Peanut Butter
+Pepper
+Salad Dressings
+Salsa (hot/med/mild)
+Salt
+Soy Sauce
+Syrup
+Vegetable Oil
+White Sugar
+Worchestershire
