@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     end
 
     if @user.save
-      redirect_to new_session_url
+      redirect_to pantries_url
     else
       render :new
     end
@@ -39,9 +39,11 @@ class UsersController < ApplicationController
     @user = current_user
 
     if @user.authenticate(params[:user][:current_password])
-      @user.update(password_params)
-
-      redirect_to user_messages_url(@user)
+      if  @user.update( password_params.merge({ guest: false }) )
+        redirect_to pantries_url
+      else 
+        render :edit
+      end
     else
       render :edit
     end
@@ -61,7 +63,7 @@ class UsersController < ApplicationController
     user = User.find(params[:id])
 
     if current_user
-      redirect_to user_message_path(current_user) unless user == current_user
+      redirect_to pantries_path(current_user) unless user == current_user
     else
       redirect_to new_session_path
     end

@@ -1,10 +1,16 @@
 class FoodsController < ApplicationController
-  before_action :set_food, only: [:show, :edit, :update, :destroy]
+  # before_action :set_food, only: [:show, :edit, :update, :destroy]
 
   # GET /foods
   # GET /foods.json
   def index
-    @foods = Food.all
+    # Pry.start(binding)
+    # content_type :json
+    # foods = Food.all
+    # @foods.to_json
+    respond_to do |format|
+      format.json { render json: Food.all }
+    end
   end
 
   # GET /foods/1

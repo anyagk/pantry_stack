@@ -1,4 +1,5 @@
 class PantriesController < ApplicationController
+  before_action :require_current_user
 
   def index
     @pantries = current_user.pantries

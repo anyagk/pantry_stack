@@ -1,0 +1,1 @@
+var Pantry = Backbone.Model.extend({});

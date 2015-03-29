@@ -28,7 +28,8 @@ class ApplicationController < ActionController::Base
 
   def require_current_user
     unless current_user
-      user = User.new(name: 'guest_' + User.count + 1, guest: true, password: 'password')
+      user = User.create(guest: true, password: 'password')
+      user.update(name: "guest_#{user.id}")
       login!(user)
     end
   end
