@@ -1,1 +1,3 @@
-var Food = Backbone.Model.extend({});
+var Food = Backbone.Model.extend({
+    url: '/foods'
+});

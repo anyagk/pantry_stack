@@ -20,7 +20,9 @@ class PantriesController < ApplicationController
   # POST /pantry
   # POST /pantry.json
   def create
-    @pantry = current_user.pantries.new(pantry_params)
+    @pantry = current_user.pantries.new(
+      pantry_params.merge({ user_id: current_user.id }) 
+    )
 
     respond_to do |format|
       if @pantry.save
@@ -65,7 +67,7 @@ class PantriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pantry_params
-      params.require(:pantry).permit(:food_id)
+      params.require(:pantry).permit(:food_id, :quantity)
     end
 end
 

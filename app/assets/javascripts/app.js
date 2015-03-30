@@ -2,9 +2,6 @@ $(function(){
   // to load the page:
   var foodRouter = new FoodRouter();
   // var pantryRouter = new PantryRouter();
-  // var foodColl = new FoodCollection();
-  // var pantryColl = new PantryCollection();
-  
 
   Backbone.history.start();
 

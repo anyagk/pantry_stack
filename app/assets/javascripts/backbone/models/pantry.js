@@ -1,1 +1,3 @@
-var Pantry = Backbone.Model.extend({});
+var Pantry = Backbone.Model.extend({
+  url: '/pantries'
+});
