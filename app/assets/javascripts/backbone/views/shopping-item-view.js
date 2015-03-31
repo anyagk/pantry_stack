@@ -11,14 +11,17 @@ var ShoppingItemView = Backbone.View.extend({
   template: function(){
     return Handlebars.templates['shopping-list'](this.model.attributes);
   },
+
   events: {
     'click .bought': 'moveToFridgeList',
     'click .trash': 'deleteFood' 
   },
+
   moveToFridgeList: function(){
     var food = this.model;
-    food.save({quantity: 1});
+    food.save({ quantity: 1 });
   },
+
   deleteFood: function(){
     var food = this.model;
     food.destroy();

@@ -1,22 +1,18 @@
 var ShoppingListView = Backbone.View.extend({
+  tagName: 'ul',
+  className: 'shopping-list',
+
   initialize: function(){
-    this.$el.empty();
     this.render();
-    this.collection.on('addFood', this.render.bind(this));
-    this.collection.on('addCustomFood', this.render.bind(this));
+    this.listenTo(this.collection, 'add', this.render);
+    this.listenTo(this.collection, 'change', this.render);
   },
 
   render: function (){
+    this.$el.empty();
     this.collection.needed().forEach(function(model){
       var shoppingThing = new ShoppingItemView({model: model})
-      shoppingThing.on('newPantry', this.render.bind(this))
       this.$el.append(shoppingThing.$el)
     }.bind(this))
-  },
-  events: {
-    'click .add': 'addFood',
-  },
-  addFood: function(){
-    this.render();
   }
-})
+})  

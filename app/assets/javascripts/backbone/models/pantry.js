@@ -1,3 +1,3 @@
 var Pantry = Backbone.Model.extend({
-  url: '/pantries'
+  urlRoot: '/pantries'
 });

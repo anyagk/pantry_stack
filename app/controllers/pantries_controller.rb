@@ -1,5 +1,6 @@
 class PantriesController < ApplicationController
   before_action :require_current_user
+  before_action :set_pantry, only: [:update, :destroy]
 
   def index
     @pantries = current_user.pantries
@@ -31,7 +32,7 @@ class PantriesController < ApplicationController
     respond_to do |format|
       if @pantry.save
         format.html { redirect_to @pantry }
-        format.json { render :json => @pantry }
+        format.json
       else
         format.html { render :new }
         format.json { render json: @pantry.errors, status: :unprocessable_entity }
@@ -71,7 +72,12 @@ class PantriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pantry_params
-      params.require(:pantry).permit(:food_id, :quantity)
+      if params[:action] == "create"
+        params.require(:pantry).permit(:food_id, :quantity)
+      else
+        params.require(:pantry).permit(:quantity)
+
+      end
     end
 end
 

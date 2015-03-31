@@ -13,7 +13,7 @@ var FoodItemView = Backbone.View.extend({
   },
 
   events: {
-    // 'click .add': 'addFood',
+    'click .add': 'addFood',
     'click .custom-food-submit': 'addCustomFood' 
   },
 
@@ -23,9 +23,8 @@ var FoodItemView = Backbone.View.extend({
     var food = this.model;
     var quantity = (parentId = "fridge-search") ? 1 : 0;
 
-    var pantry = new Pantry({ food_id: food.id, quantity: quantity });
-    pantry.save();
-    this.trigger('newPantry');
+    var pantry = pantryRouter.pantryCollection.create({ food_id: food.id, quantity: quantity });
+
     $('.food-search').val('');
     $('.search-results').empty();
   },
@@ -41,6 +40,7 @@ var FoodItemView = Backbone.View.extend({
         var quantity = (parentId = "fridge-search") ? 1 : 0;
         var pantry = new Pantry({ food_id: id, quantity: quantity });
         pantry.save();
+        this.trigger('newPantry');
       }.bind(this)
     });
     $('.food-search').val('');
