@@ -3,6 +3,10 @@ class PantriesController < ApplicationController
 
   def index
     @pantries = current_user.pantries
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def show
@@ -27,7 +31,7 @@ class PantriesController < ApplicationController
     respond_to do |format|
       if @pantry.save
         format.html { redirect_to @pantry }
-        format.json { render :show, status: :created, location: @pantry }
+        format.json { render :json => @pantry }
       else
         format.html { render :new }
         format.json { render json: @pantry.errors, status: :unprocessable_entity }

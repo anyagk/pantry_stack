@@ -1,7 +1,7 @@
 $(function(){
   // to load the page:
-  var foodRouter = new FoodRouter();
-  // var pantryRouter = new PantryRouter();
+  // var foodRouter = new FoodRouter();
+  var pantryRouter = new PantryRouter();
 
   Backbone.history.start();
 

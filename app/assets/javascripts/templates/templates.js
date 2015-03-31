@@ -1,10 +1,24 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['fridge-list'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var helper;
+
+  return "<li>"
+    + this.escapeExpression(((helper = (helper = helpers.food_name || (depth0 != null ? depth0.food_name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"food_name","hash":{},"data":data}) : helper)))
+    + " <button class='used'>Add to shopping list</button><button class='trash'>Delete</button></li> ";
+},"useData":true});
 templates['search-results'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var helper;
 
   return "<li>"
     + this.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</li> <button class='add'>Add</button>";
+    + " <button class='add'>Add this item</button></li> ";
+},"useData":true});
+templates['shopping-list'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var helper;
+
+  return "<li>"
+    + this.escapeExpression(((helper = (helper = helpers.food_name || (depth0 != null ? depth0.food_name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"food_name","hash":{},"data":data}) : helper)))
+    + " <button class='bought'>Add to fridge</button><button class='trash'>Delete</button></li> ";
 },"useData":true});
 })();

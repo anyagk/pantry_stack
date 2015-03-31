@@ -7,10 +7,12 @@ var PantryCollection = Backbone.Collection.extend({
     })
   },
   needed: function(){
-    return this.models.where({quantity: 0});
+    var neededList = this.where({quantity: 0});
+    return neededList;
   },
   notNeeded: function(){
-    return this.models.where({quantity: 1});
+    var notNeededList = this.where({quantity: 1});
+    return notNeededList
   }
 })
 
