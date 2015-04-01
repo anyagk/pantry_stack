@@ -1,6 +1,7 @@
 var FoodCollectionView = Backbone.View.extend({
   initialize: function(){
-    // this.render();
+    this.listenTo(this.collection, 'add', this.renderFridge);
+    this.listenTo(this.collection, 'add', this.renderShopping);
   },
   renderFridge: function(keyword){
     var $searchResults = this.$el.find('.search-results.fridge');
@@ -28,10 +29,34 @@ var FoodCollectionView = Backbone.View.extend({
 
     // $('#search-list').append(this.$el('.search-list'));
   },
+
   events: {
-    'keyup .food-search': 'search'
+    'keyup .food-search': 'search',
+    'click .custom': 'createCustomFood' 
   },
 
+  createCustomFood: function(e){
+    var food = pantryRouter.foodCollection.create({
+      name: $(e.target).parent().find('.food-search').val().toLowerCase(),
+    }, {
+      success: 
+        function (){
+          debugger;
+          var quantity = (e.target.id == "fridge-custom") ? 1 : 0;
+          var pantry = pantryRouter.pantryCollection.create({
+           food_id: food.id, 
+           quantity: quantity 
+          });
+          $('.food-search').val('');
+        }
+    });
+  },
+
+  // addCustomFood: function(e, food){
+  //   debugger;
+  //   // var id = $('.food-search').val()
+  //   // var parentId = $(e.target).closest('div').attr("id");
+  // },
   search: function(e){
     var target = e.target;
     var inFridge = $(target).hasClass('fridge');

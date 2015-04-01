@@ -6,6 +6,7 @@ var FridgeListView = Backbone.View.extend({
     this.render();
     this.listenTo(this.collection, 'add', this.render);
     this.listenTo(this.collection, 'change', this.render);
+    this.listenTo(this.collection, 'destroy', this.render);
   },
 
   render: function (){
