@@ -7,29 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+    </a>
+    <div class="navigation-tools">
+      <% if !current_user.guest %>
+        <li>
+          <%= button_to "Log Out", sessions_url, method: "delete" %>
+        </li>
 
-<nav class="logged-in clearfix">
-  <div class="logo">
-    Pantry Stack
+      <% else %>
+        <li>
+          <%= link_to "Sign up to save your pantry", edit_user_url(current_user) %>
+        </li>
+        <li>
+          <%= link_to "Log in", new_session_url %>
+        </li>
+      <% end %>
+    </div>
   </div>
-  <ul class="clearfix">
-  <% if !current_user.guest %>
-    <li>
-      <%= button_to "Log Out", sessions_url, method: "delete" %>
-    </li>
-    <li>
-      <%= link_to "Change Password", edit_user_url(current_user) %>
-    </li>
-  <% else %>
-    <li>
-      <%= link_to "Sign up to save your pantry", edit_user_url(current_user) %>
-    </li>
-    <li>
-      <%= link_to "Log in", new_session_url %>
-    </li>
-  </ul>
-</nav>
-<% end %>
+</header>
 <%= yield %>
 
 </body>

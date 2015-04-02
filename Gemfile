@@ -31,6 +31,9 @@ gem 'pry-rails'
 gem 'annotate'
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'bourbon'
+gem 'neat'
+gem 'refills'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

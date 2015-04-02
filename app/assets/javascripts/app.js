@@ -4,26 +4,18 @@ $(function(){
   window.pantryRouter = new PantryRouter();
 
   Backbone.history.start();
-
-  // foodColl.fetch({
-  //   data: {testing: 'testing'},
-  //   success: function(data){
-  //     array = []
-  //     $.each(data.models, function(index, value){
-  //         array.push({name: value.attributes.name, id: value.attributes.id})
-  //     })
-  //     console.log(array)
-  //   },
-  //   error: function(data){
-  //     console.log(data)
-  //   }
-  // });
-
-  // $('#food-search').on('keydown', function(e){
-  //   if(this.value.length > 2){
-  //     var resultsColl = _.filter(foodColl.models, function(food){return food.attributes.name.indexOf(this.value) >= 0 })
-  //     var resultsCollectionView = new FoodCollectionView({collection: resultsColl});
-  //     resultsCollectionView.render();
-  //   }
-  // })
 })
+
+$(document).ready(function() {
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
