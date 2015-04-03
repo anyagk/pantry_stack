@@ -18,11 +18,9 @@ var FridgeItemView = Backbone.View.extend({
   moveToShoppingList: function(e){
     var food = this.model;
     food.save({quantity: 0});
-    this.trigger('newPantry');
   },
   deleteFood: function(e){
     var food = this.model;
     food.destroy();
-    this.trigger('newPantry');
   }
 })  
