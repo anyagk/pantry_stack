@@ -316,7 +316,7 @@ header.navigation {
 // Elements on the far right
 
   .navigation-tools {
-    background: #505050;
+    background: #550527;
     clear: both;
     display: block;
     height: $navigation-height;
@@ -726,9 +726,66 @@ button.form-button {
     margin: 0 auto;
     padding: 10px 0;
   }
+  header.navigation {
+    background-color: #550527;
+
+    .navigation-tools{   
+      float: right;
+      display: inline-block;
+      clear: none;
+    }
+
+    ul li.nav-link {
+      float: left;
+      width: auto;
+      padding-right: .2em;
+
+      a {
+        font-size: .75em;
+        padding: .75em .5em;
+      }
+    }
+  }
+
+  .footer-2 .footer-logo {
+    float: left;
+  }
+  .footer-2 ul {
+    margin-bottom: 0;
+    line-height: 1.7em;
+  }
+
+  .vertical-tabs-container {
+
+    input[type="text"] {
+      width: 100%;
+      display: inline;
+    }
+    button.form-button {
+      display: inline;
+      font-size: .75em;
+    }
+    ul.fridge-list .food-list li p {
+      font-size: .4em;
+    }
+  }
 }
 
+ul.fridge-list {
+  @include outer-container;
+  
+  .trash { @include span-columns(2); }
+  .used { @include span-columns(4); }
+  .food-list { @include span-columns(4); }
+}
 
+ul.shopping-list {
+  @include outer-container;
+  
+  .trash { @include span-columns(2); }
+  .bought { @include span-columns(4); }
+  .food-list { @include span-columns(4); }
+}
 
 
 
