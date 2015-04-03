@@ -22,6 +22,17 @@
 /*main {
   @include: outer-container(960px);
 }*/
+.outer-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+img.full-splash {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
 header.navigation {
   
 ///////////////////////////////////////////////////////////////////////////////////
