@@ -707,20 +707,55 @@ html, body{
   }
 }
 
+.list-o-g {
+    width: 100%;
+    height: auto;
+    clear: both;
+  }
 button.form-button {
   background-color: #688E26;
   margin: 2px;
   padding: 0.25em .5em;
   text-align: center;
 }
-
-@media (max-width: 800px) {
+ul.fridge-list {
+  @include outer-container;
   
-  .vertical-tabs-container button.form-button {
-    display: inline;
-    font-size: .75em;
+  .trash { @include span-columns(2); }
+  .used { @include span-columns(4); }
+  .food-list { @include span-columns(4); }
+}
+
+ul.shopping-list {
+  @include outer-container;
+  
+  .trash { @include span-columns(2); }
+  .bought { @include span-columns(4); }
+  .food-list { @include span-columns(4); }
+}
+
+ul.search-results {
+  @include outer-container;
+  
+  .search-add-button { @include span-columns(3); }
+  .search-list { @include span-columns(6); }
+}
+
+.vertical-tab-content {
+  overflow: scroll;
+}
+
+@media (max-width: 900px) {
+  .list-button{
+    font-size:  .5em;
   }
-}  
+  .list-o-g {
+    width: 100%;
+    height: auto;
+    clear: both;
+  }
+}
+
 @media (max-width: 700px) {
   img.full-splash {
     display: none;
@@ -769,7 +804,7 @@ button.form-button {
     }
     button.form-button {
       display: inline;
-      font-size: .75em;
+      font-size: .5em;
     }
     ul.fridge-list .food-list {
       width: 100%;
@@ -795,33 +830,8 @@ button.form-button {
       .button {
         font-size: .4em !important;
       }
-
     }
   }
 }
-
-ul.fridge-list {
-  @include outer-container;
-  
-  .trash { @include span-columns(2); }
-  .used { @include span-columns(4); }
-  .food-list { @include span-columns(4); }
-}
-
-ul.shopping-list {
-  @include outer-container;
-  
-  .trash { @include span-columns(2); }
-  .bought { @include span-columns(4); }
-  .food-list { @include span-columns(4); }
-}
-
-ul.search-results {
-  @include outer-container;
-  
-  .search-add-button { @include span-columns(3); }
-  .search-list { @include span-columns(6); }
-}
-
 
 
