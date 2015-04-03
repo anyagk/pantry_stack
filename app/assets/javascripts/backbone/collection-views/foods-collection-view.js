@@ -41,7 +41,6 @@ var FoodCollectionView = Backbone.View.extend({
     }, {
       success: 
         function (){
-          debugger;
           var quantity = (e.target.id == "fridge-custom") ? 1 : 0;
           var pantry = pantryRouter.pantryCollection.create({
            food_id: food.id, 
