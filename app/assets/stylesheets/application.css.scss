@@ -714,7 +714,13 @@ button.form-button {
   text-align: center;
 }
 
-
+@media (max-width: 800px) {
+  
+  .vertical-tabs-container button.form-button {
+    display: inline;
+    font-size: .75em;
+  }
+}  
 @media (max-width: 700px) {
   img.full-splash {
     display: none;
@@ -765,8 +771,31 @@ button.form-button {
       display: inline;
       font-size: .75em;
     }
-    ul.fridge-list .food-list li p {
-      font-size: .4em;
+    ul.fridge-list .food-list {
+      width: 100%;
+      @include outer-container;
+  
+      .trash { @include span-columns(3); }
+      .used { @include span-columns(4); }
+      .food-list { @include span-columns(4); }
+      
+      .button {
+        font-size: .4em !important;
+      }
+
+    }
+    ul.shopping-list .food-list {
+      width: 100%;
+      @include outer-container;
+  
+      .trash { @include span-columns(2); }
+      .bought { @include span-columns(4); }
+      .food-list { @include span-columns(4); }
+      
+      .button {
+        font-size: .4em !important;
+      }
+
     }
   }
 }
@@ -785,6 +814,13 @@ ul.shopping-list {
   .trash { @include span-columns(2); }
   .bought { @include span-columns(4); }
   .food-list { @include span-columns(4); }
+}
+
+ul.search-results {
+  @include outer-container;
+  
+  .search-add-button { @include span-columns(3); }
+  .search-list { @include span-columns(6); }
 }
 
 

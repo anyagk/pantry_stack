@@ -10,9 +10,9 @@ templates['fridge-list'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":fun
 templates['search-results'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var helper;
 
-  return "<li>"
+  return "<li><p class='search-list'>"
     + this.escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
-    + " <button class='add form-button'>Add this item</button></li> ";
+    + "</p><button class='add form-button search-add-button'>Add this item</button></li> ";
 },"useData":true});
 templates['shopping-list'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var helper;
