@@ -30,7 +30,7 @@ gem 'pry-rails'
 
 gem 'annotate'
 # Use Unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 gem 'bourbon'
 gem 'neat'
 gem 'refills'
