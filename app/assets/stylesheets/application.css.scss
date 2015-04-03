@@ -28,14 +28,17 @@
 }
 
 img.full-splash {
-  width: 70%;
+  width: 65%;
   display: block;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 img.half-splash {
   display: none;
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 header.navigation {
@@ -400,6 +403,12 @@ header.navigation {
   }
 }
 .vertical-tabs-container {
+  width: 75%;
+  margin: 0 auto;
+
+  button.form-button {
+    display: inline;
+  }
   
 ///////////////////////////////////////////////////////////////////////////////////
   $base-border-color: gainsboro !default;
@@ -425,6 +434,11 @@ header.navigation {
   a {
     text-decoration: none;
     color: $base-link-color;
+  }
+
+  input[type="text"] {
+    width: 50%;
+    display: inline;
   }
   
 //////////////////////////////////////////////////////////////////////////////////
@@ -642,7 +656,7 @@ html, body{
   }
 
   ul li a {
-    color: $footer-link-color;
+    color: #550527;
 
     &:focus,
     &:hover {
