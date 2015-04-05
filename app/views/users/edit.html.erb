@@ -1,25 +1,26 @@
+<div class="sign-in">
+    <%= form_for @user do |f| %>
+      <% if !current_user.guest  %>
+        <h1>Change your password</h1>
+        <%= password_field_tag "user[current_password]", nil, placeholder: "current password" %>
+        <br/>
+        <%= f.password_field :password, placeholder: "new password" %>
+        <br/>
+        <%= f.password_field :password_confirmation, placeholder: "confirm new password" %>
+        <br/>
 
-<%= form_for @user do |f| %>
-  <% if !current_user.guest  %>
-    <h1>Change your password</h1>
-    <%= password_field_tag "user[current_password]", nil, placeholder: "current password" %>
-    <br/>
-    <%= f.password_field :password, placeholder: "new password" %>
-    <br/>
-    <%= f.password_field :password_confirmation, placeholder: "confirm new password" %>
-    <br/>
+        <%= f.submit "Update password" %>
+      <% else %>
+        <h1>Create your account</h1>
+        <input type="hidden" value="password" name="user[current_password]">
+        <br/>
+        <%= f.text_field :name, placeholder: "email" %>
+        <%= f.password_field :password, placeholder: "password" %>
+        <br/>
+        <%= f.password_field :password_confirmation, placeholder: "confirm password" %>
+        <br/>
 
-    <%= f.submit "Update password" %>
-  <% else %>
-    <h1>Create your account</h1>
-    <input type="hidden" value="password" name="user[current_password]">
-    <br/>
-    <%= f.text_field :name, placeholder: "desired username" %>
-    <%= f.password_field :password, placeholder: "password" %>
-    <br/>
-    <%= f.password_field :password_confirmation, placeholder: "confirm password" %>
-    <br/>
-
-    <%= f.submit "Sign up!" %>
-  <% end %>
-<% end %>
+        <%= f.submit "Sign up!" %>
+      <% end %>
+    <% end %>
+</div>
