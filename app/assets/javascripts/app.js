@@ -7,6 +7,7 @@ $(function(){
 })
 
 $(document).ready(function() {
+  console.log('hi')
   var menuToggle = $('#js-mobile-menu').unbind();
   $('#js-navigation-menu').removeClass("show");
 

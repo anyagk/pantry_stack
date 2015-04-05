@@ -14,7 +14,7 @@
         <h1>Create your account</h1>
         <input type="hidden" value="password" name="user[current_password]">
         <br/>
-        <%= f.text_field :name, placeholder: "email" %>
+        <%= f.text_field :name, value: "", placeholder: "email" %>
         <%= f.password_field :password, placeholder: "password" %>
         <br/>
         <%= f.password_field :password_confirmation, placeholder: "confirm password" %>
